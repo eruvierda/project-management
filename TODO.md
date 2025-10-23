@@ -37,8 +37,8 @@
     *   [ ] Frontend: Filterable task list for each project. Implement “Quick Add” task with an input field that auto-focuses for ease of access.
     *   [ ] Frontend: Task details overlay/side panel for editing assignee, due date, and task status.
     *   [ ] Frontend: Add visual indicators (tags/priority labels) for high-priority tasks.
-*   [ ] **Collaboration:**
-    *   [ ] Backend: API endpoints for posting and retrieving comments on tasks (keep it simple for now).
+*   [x] **Collaboration:**
+    *   [x] Backend: API endpoints for posting and retrieving comments on tasks (keep it simple for now).
     *   [ ] Frontend: Task details view with a comment/activity feed.
     *   [ ] Frontend: Implement real-time updates for comments using WebSockets or Firebase (optional at first).
 *   [ ] **Navigation & Search:**
