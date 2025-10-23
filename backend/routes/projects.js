@@ -3,6 +3,8 @@ const router = express.Router();
 import {
   getProjectsByWorkspace,
   createProject,
+  updateProject,
+  deleteProject,
 } from '../controllers/projectController.js';
 import auth from '../middleware/authMiddleware.js';
 
@@ -15,5 +17,15 @@ router.get('/by-workspace/:workspaceId', auth, getProjectsByWorkspace);
 // @desc    Create a project
 // @access  Private
 router.post('/', auth, createProject);
+
+// @route   PUT /api/projects/:id
+// @desc    Update a project
+// @access  Private
+router.put('/:id', auth, updateProject);
+
+// @route   DELETE /api/projects/:id
+// @desc    Delete a project
+// @access  Private
+router.delete('/:id', auth, deleteProject);
 
 export default router;

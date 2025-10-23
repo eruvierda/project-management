@@ -58,4 +58,63 @@ const createProject = async (req, res) => {
   }
 };
 
-export { getProjectsByWorkspace, createProject };
+// @desc    Update a project
+// @route   PUT /api/projects/:id
+// @access  Private
+const updateProject = async (req, res) => {
+  try {
+    const project = await Project.findById(req.params.id);
+    if (!project) {
+      return res.status(404).json({ msg: 'Project not found' });
+    }
+
+    // Authorization: Check if user is a member of the workspace
+    const workspace = await Workspace.findOne({
+      _id: project.workspace,
+      members: req.user.id,
+    });
+    if (!workspace) {
+      return res
+        .status(401)
+        .json({ msg: 'Not authorized to update this project' });
+    }
+
+    const { name, status } = req.body;
+    if (name) project.name = name;
+    if (status) project.status = status;
+
+    const updatedProject = await project.save();
+    res.json(updatedProject);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+};
+
+// @desc    Delete a project
+// @route   DELETE /api/projects/:id
+// @access  Private
+const deleteProject = async (req, res) => {
+  try {
+    const project = await Project.findById(req.params.id);
+    if (!project) {
+      return res.status(404).json({ msg: 'Project not found' });
+    }
+
+    // Authorization: Check if user is the owner of the workspace
+    const workspace = await Workspace.findById(project.workspace);
+    if (workspace.owner.toString() !== req.user.id) {
+      return res
+        .status(401)
+        .json({ msg: 'Not authorized to delete this project' });
+    }
+
+    await project.remove();
+    res.json({ msg: 'Project removed' });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+};
+
+export { getProjectsByWorkspace, createProject, updateProject, deleteProject };
