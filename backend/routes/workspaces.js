@@ -3,6 +3,7 @@ const router = express.Router();
 import {
   getWorkspaces,
   createWorkspace,
+  addWorkspaceMember,
 } from '../controllers/workspaceController.js';
 import auth from '../middleware/authMiddleware.js';
 
@@ -15,5 +16,10 @@ router.get('/', auth, getWorkspaces);
 // @desc    Create a workspace
 // @access  Private
 router.post('/', auth, createWorkspace);
+
+// @route   POST /api/workspaces/:id/members
+// @desc    Add a member to a workspace
+// @access  Private
+router.post('/:id/members', auth, addWorkspaceMember);
 
 export default router;
