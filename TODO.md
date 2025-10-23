@@ -17,11 +17,11 @@
 
 ### Phase 2: Core Feature Development
 
-*   [ ] **Workspace Management:**
-    *   [ ] Backend: Implement simple RESTful API endpoints for creating, reading, and switching workspaces.
+*   [x] **Workspace Management:**
+    *   [x] Backend: Implement simple RESTful API endpoints for creating, reading, and switching workspaces.
     *   [ ] Frontend: Create UI for creating a new workspace and a fast, searchable workspace switcher (make it context-sensitive based on recent workspaces).
-*   [ ] **Team Management:**
-    *   [ ] Backend: API for inviting and managing team members in a workspace (keep it simple: email invites, no complex roles yet).
+*   [x] **Team Management:**
+    *   [x] Backend: API for inviting and managing team members in a workspace (keep it simple: email invites, no complex roles yet).
     *   [ ] Frontend: Implement UI for sending and accepting invitations, with basic error handling for invalid emails.
 *   [ ] **Project Management:**
     *   [ ] Backend: CRUD operations for projects via simple API endpoints.
