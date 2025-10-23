@@ -1,17 +1,17 @@
 ### Phase 1: Preparation & Foundation
 
-*   [ ] **Project Setup:**
-    *   [ ] Initialize Git repository and set up basic Git workflows.
+*   [x] **Project Setup:**
+    *   [x] Initialize Git repository and set up basic Git workflows.
     *   [ ] Set up the frontend framework (Vue.js for simplicity and rapid development).
-    *   [ ] Set up backend framework (Node.js/Express for simplicity and flexibility).
-    *   [ ] Define project structure, add linting rules (ESLint) and code formatting (Prettier) standards. Use Husky for Git hooks to automate checks on commits.
-*   [ ] **Database & Schema:**
-    *   [ ] Design a simple, flexible database schema that can scale (Use MongoDB for a NoSQL structure or PostgreSQL if SQL is preferred).
-    *   [ ] Create models/tables for Users, Workspaces, Projects, Tasks, and Comments using Mongoose (for MongoDB) or Sequelize (for PostgreSQL).
-    *   [ ] Add createdAt and updatedAt timestamps for data tracking.
-*   [ ] **Authentication:**
-    *   [ ] Implement user registration and login with JWT (JSON Web Tokens).
-    *   [ ] Basic session management: JWT-based, ensure token expiration and refresh tokens.
+    *   [x] Set up backend framework (Node.js/Express for simplicity and flexibility).
+    *   [x] Define project structure, add linting rules (ESLint) and code formatting (Prettier) standards. Use Husky for Git hooks to automate checks on commits.
+*   [x] **Database & Schema:**
+    *   [x] Design a simple, flexible database schema that can scale (Use MongoDB for a NoSQL structure or PostgreSQL if SQL is preferred).
+    *   [x] Create models/tables for Users, Workspaces, Projects, Tasks, and Comments using Mongoose (for MongoDB) or Sequelize (for PostgreSQL).
+    *   [x] Add createdAt and updatedAt timestamps for data tracking.
+*   [x] **Authentication:**
+    *   [x] Implement user registration and login with JWT (JSON Web Tokens).
+    *   [x] Basic session management: JWT-based, ensure token expiration and refresh tokens.
 
 ---
 
