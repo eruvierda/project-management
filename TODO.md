@@ -32,8 +32,8 @@
 
 ### Phase 3: Task & Collaboration Features
 
-*   [ ] **Task Management:**
-    *   [ ] Backend: API endpoints for managing tasks and sub-tasks.
+*   [x] **Task Management:**
+    *   [x] Backend: API endpoints for managing tasks and sub-tasks.
     *   [ ] Frontend: Filterable task list for each project. Implement “Quick Add” task with an input field that auto-focuses for ease of access.
     *   [ ] Frontend: Task details overlay/side panel for editing assignee, due date, and task status.
     *   [ ] Frontend: Add visual indicators (tags/priority labels) for high-priority tasks.
