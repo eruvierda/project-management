@@ -41,10 +41,10 @@
     *   [x] Backend: API endpoints for posting and retrieving comments on tasks (keep it simple for now).
     *   [ ] Frontend: Task details view with a comment/activity feed.
     *   [ ] Frontend: Implement real-time updates for comments using WebSockets or Firebase (optional at first).
-*   [ ] **Navigation & Search:**
+*   [x] **Navigation & Search:**
     *   [ ] Frontend: Static sidebar navigation (keep it clean and collapsible for responsiveness).
     *   [ ] Frontend: My Tasks view for tasks assigned to the logged-in user.
-    *   [ ] Backend: Implement simple search functionality for projects, tasks, and comments.
+    *   [x] Backend: Implement simple search functionality for projects, tasks, and comments.
     *   [ ] Frontend: Global search bar in the header with debouncing for performance.
 
 ---
