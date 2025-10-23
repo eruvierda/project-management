@@ -1,6 +1,7 @@
 import express from 'express';
 import connectDB from './config/database.js';
 import userRoutes from './routes/users.js';
+import workspaceRoutes from './routes/workspaces.js';
 
 // Connect to database
 connectDB();
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
 
 // Define Routes
 app.use('/api/users', userRoutes);
+app.use('/api/workspaces', workspaceRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
