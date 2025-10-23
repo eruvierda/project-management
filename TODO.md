@@ -23,8 +23,8 @@
 *   [x] **Team Management:**
     *   [x] Backend: API for inviting and managing team members in a workspace (keep it simple: email invites, no complex roles yet).
     *   [ ] Frontend: Implement UI for sending and accepting invitations, with basic error handling for invalid emails.
-*   [ ] **Project Management:**
-    *   [ ] Backend: CRUD operations for projects via simple API endpoints.
+*   [x] **Project Management:**
+    *   [x] Backend: CRUD operations for projects via simple API endpoints.
     *   [ ] Frontend: Project grid view displaying title, status, progress, and avatars. Implement a "Quick Add" project button with inline validation.
     *   [ ] Frontend: Simple styling of project cards to maintain clarity (consider dynamic progress bars tied to task completion).
 
