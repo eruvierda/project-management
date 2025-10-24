@@ -2,7 +2,7 @@
 
 *   [x] **Project Setup:**
     *   [x] Initialize Git repository and set up basic Git workflows.
-    *   [ ] Set up the frontend framework (Vue.js for simplicity and rapid development).
+    *   [x] Set up the frontend framework (Vue.js for simplicity and rapid development).
     *   [x] Set up backend framework (Node.js/Express for simplicity and flexibility).
     *   [x] Define project structure, add linting rules (ESLint) and code formatting (Prettier) standards. Use Husky for Git hooks to automate checks on commits.
 *   [x] **Database & Schema:**
@@ -19,14 +19,14 @@
 
 *   [x] **Workspace Management:**
     *   [x] Backend: Implement simple RESTful API endpoints for creating, reading, and switching workspaces.
-    *   [ ] Frontend: Create UI for creating a new workspace and a fast, searchable workspace switcher (make it context-sensitive based on recent workspaces).
+    *   [x] Frontend: Create UI for creating a new workspace and a fast, searchable workspace switcher (make it context-sensitive based on recent workspaces).
 *   [x] **Team Management:**
     *   [x] Backend: API for inviting and managing team members in a workspace (keep it simple: email invites, no complex roles yet).
     *   [ ] Frontend: Implement UI for sending and accepting invitations, with basic error handling for invalid emails.
 *   [x] **Project Management:**
     *   [x] Backend: CRUD operations for projects via simple API endpoints.
-    *   [ ] Frontend: Project grid view displaying title, status, progress, and avatars. Implement a "Quick Add" project button with inline validation.
-    *   [ ] Frontend: Simple styling of project cards to maintain clarity (consider dynamic progress bars tied to task completion).
+    *   [x] Frontend: Project grid view displaying title, status, progress, and avatars. Implement a "Quick Add" project button with inline validation.
+    *   [x] Frontend: Simple styling of project cards to maintain clarity (consider dynamic progress bars tied to task completion).
 
 ---
 
@@ -42,10 +42,10 @@
     *   [ ] Frontend: Task details view with a comment/activity feed.
     *   [ ] Frontend: Implement real-time updates for comments using WebSockets or Firebase (optional at first).
 *   [x] **Navigation & Search:**
-    *   [ ] Frontend: Static sidebar navigation (keep it clean and collapsible for responsiveness).
+    *   [x] Frontend: Static sidebar navigation (keep it clean and collapsible for responsiveness).
     *   [ ] Frontend: My Tasks view for tasks assigned to the logged-in user.
     *   [x] Backend: Implement simple search functionality for projects, tasks, and comments.
-    *   [ ] Frontend: Global search bar in the header with debouncing for performance.
+    *   [x] Frontend: Global search bar in the header with debouncing for performance.
 
 ---
 
